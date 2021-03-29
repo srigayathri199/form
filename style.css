@@ -214,7 +214,7 @@ h1 {
     .mar {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: auto;
+margin-bottom: 35px;
         width: 90%;
         background-color: white;
     }
