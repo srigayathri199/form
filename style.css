@@ -211,6 +211,8 @@ h1 {
         background-color: rgb(240, 182, 141);
     }
     .mar {
+        margin-left: auto;
+        margin-right: auto;
         width: 90%;
         background-color: rgb(241, 217, 194);
     }
