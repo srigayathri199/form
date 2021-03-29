@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(138, 187, 198);
+    background-color: rgb(240, 182, 141);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
 }
@@ -24,7 +24,7 @@ h1 {
     border-radius: 5px;
     width: 70%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(241, 217, 194);
 }
 
 .f {
@@ -92,7 +92,7 @@ h1 {
 
 .submit {
     font-size: 1.1rem;
-    background-color: rgb(123, 123, 164);
+    background-color: rgb(255, 170, 109)rgb(123, 123, 164);
     padding: 0.8rem;
     cursor: pointer;
     text-align: center;
@@ -208,13 +208,14 @@ h1 {
 
 @media (max-width:362px) {
     body {
-        background-color: rgb(240, 182, 141);
+        background-color: rgb(138, 187, 198);
     }
     .mar {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: auto;
         width: 90%;
-        background-color: rgb(241, 217, 194);
+        background-color: white;
     }
     .f .f1 {
         display: flex;
@@ -256,6 +257,6 @@ h1 {
         font-size: 0.99rem;
     }
     .submit {
-        background-color: rgb(255, 170, 109);
+        background-color: rgb(123, 123, 164);
     }
 }
