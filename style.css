@@ -215,7 +215,12 @@ h1 {
         margin-right: auto;
         margin-bottom: auto;
         width: 90%;
+<<<<<<< HEAD
         background-color: white;
+=======
+        background-color: rgb(241, 217, 194);
+        margin-bottom:25px;
+>>>>>>> 7144ee5e96acf694505c96d7d43f936f44eefe92
     }
     .f .f1 {
         display: flex;
