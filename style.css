@@ -205,3 +205,55 @@ h1 {
         font-size: 0.99rem;
     }
 }
+
+@media (max-width:320px) {
+    body {
+        background-color: rgb(240, 182, 141);
+    }
+    .mar {
+        width: 90%;
+        background-color: rgb(241, 217, 194);
+    }
+    .f .f1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .label {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .in {
+        display: block;
+        position: absolute;
+        width: 70%;
+        left: auto;
+    }
+    .f2 {
+        margin: 0px;
+    }
+    .f3,
+    .f4,
+    .f5,
+    .f6,
+    .f7,
+    .f8,
+    .f9 {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .f10 {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .message {
+        padding: 3rem;
+        width: 30%;
+        height: auto;
+        font-size: 0.99rem;
+    }
+    .submit {
+        background-color: rgb(255, 170, 109);
+    }
+}
