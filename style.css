@@ -140,7 +140,7 @@ h1 {
     background: none;
 }
 
-@media (min-width:320px) and (max-width:720px) {
+@media (min-width:362px) and (max-width:720px) {
     .f .f1 {
         display: flex;
         width: 100%;
@@ -206,7 +206,7 @@ h1 {
     }
 }
 
-@media (max-width:320px) {
+@media (max-width:362px) {
     body {
         background-color: rgb(240, 182, 141);
     }
