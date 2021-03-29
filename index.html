@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <form class="form" name="feedback" action="">
+        <div class="mar">
+            <div class="f">
+                <div class="f1">
+                    <div class="f1-1">
+                        <label for="fname">
+                        First name 
+                        </label><br>
+                        <input type="text" id="fname" placeholder="First Name">
+                    </div>
+
+                    <div class="f1-2">
+                        <label for="lname ">
+                        Last name 
+                        </label><br>
+                        <input type="text " placeholder="Last Name" id="lname">
+                    </div>
+                </div>
+
+                <div class="f2">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <div class="f3">
+                    <label for="dob" class="label">
+                    Date of Birth
+                    </label>
+                    <input type="date" id="dob" class="in">
+                </div>
+
+                <div class="f4">
+                    <label for="age" class="label">
+                    Age
+                    </label>
+                    <input type="number" id="age" class="in">
+                </div>
+
+                <div class="f5">
+                    <label for="email" class="label">
+                    Email
+                    </label>
+                    <input type="email" placeholder="Email" id="email" class="in">
+                </div>
+
+                <div class="f6">
+                    <label for="con" class="label">
+                    Contact
+                    </label>
+                    <input type="number" id="con" class="in">
+                </div>
+
+                <div class="f7">
+                    <label for="addr " class="label ">
+                    Home Address
+                    </label>
+                    <input type="text" id="addr" class="in"></input>
+                </div>
+
+                <div class="f8">
+                    <label for="state" class="label ">
+                    State
+                    </label>
+                    <input type="text" placeholder="State" id="state" class="in">
+                </div>
+
+                <div class="f9">
+                    <label for="Country" class="label ">
+                    Country
+                    </label>
+                    <input type="text" placeholder="Country" id="Country" class="in">
+                </div>
+
+                <div class="f10">
+                    <input type="checkbox" class="chk" id="check" required>
+                    <label class="x" for="check">
+                        I agree that i gave the correct details
+                    </label>
+                </div>
+
+                <div class="f11">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="message hidden">
+        <button class="close-modal">&times;</button>
+
+        <p>
+            Thank You for submitting the form.</p>
+        <p></p>Your details are recorded.
+        </p>
+
+    </div>
+
+    <div class="overlay hidden"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

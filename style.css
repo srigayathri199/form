@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(138, 187, 198);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.mar {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
+}
+
+.f {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8rem;
+    padding: 15px;
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(11, minmax(2rem, auto));
+    grid-gap: 5px;
+}
+
+.f .f1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.f .f1>div {
+    margin-right: 1rem;
+}
+
+.in {
+    width: 30%;
+    position: absolute;
+    left: 45%;
+    font-size: 1rem;
+    border: none;
+    padding: 5px;
+    border-style: outset;
+}
+
+.label {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.f1-1 input,
+.f1-2 input {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    margin-right: 0.8rem;
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-style: outset;
+}
+
+.f>div {
+    margin-bottom: 0.1rem;
+}
+
+.f2 div {
+    margin-bottom: 0.4rem;
+}
+
+.x {
+    font-size: 0.8rem;
+}
+
+.f11 {
+    text-align: center;
+}
+
+.submit {
+    font-size: 1.1rem;
+    background-color: rgb(123, 123, 164);
+    padding: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    width: 10rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: white;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+@media (min-width:320px) and (max-width:720px) {
+    .f .f1 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .label {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .in {
+        display: block;
+        position: absolute;
+        width: 50%;
+        left: auto;
+    }
+    .f2 {
+        margin: 0px;
+    }
+    .f3,
+    .f4,
+    .f5,
+    .f6,
+    .f7,
+    .f8,
+    .f9 {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .f10 {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .message {
+        padding: 3rem;
+        width: 30%;
+        height: auto;
+        font-size: 0.99rem;
+    }
+}
+
+@media (min-width:721px) and (max-width:899px) {
+    .message {
+        padding: 3rem;
+        width: 30%;
+        height: auto;
+        font-size: 0.99rem;
+    }
+}
+
+@media (min-width:900px) {
+    .mar {
+        width: 40%;
+    }
+    .in {
+        width: 20%;
+    }
+    .message {
+        padding: 3rem;
+        width: 30%;
+        height: auto;
+        font-size: 0.99rem;
+    }
+}
