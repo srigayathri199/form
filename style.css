@@ -215,6 +215,7 @@ h1 {
         margin-right: auto;
         width: 90%;
         background-color: rgb(241, 217, 194);
+        margin-bottom:25px;
     }
     .f .f1 {
         display: flex;
