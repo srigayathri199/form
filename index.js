@@ -1,11 +1,9 @@
+var  fr =  document.querySelector('.mar');
 let submitbtn = document.querySelector('.submit');
 let checkbox = document.querySelector('.chk');
 let message = document.querySelector('.message');
-let overlay = document.querySelector('.overlay');
-const btnclosemodal = document.querySelector('.close-modal');
 let ipvalues = document.querySelectorAll('input');
-let form = document.querySelector('.form');
-
+let h1 = document.querySelector('h1')
 
 //check all input values are given
 const checkFilled = function(){
@@ -52,20 +50,15 @@ submitbtn.addEventListener('click',function(e){
         const values =  checkFilled();
         console.log(values);
         if(checkbox.checked && radio && values){
-            message.classList.remove('hidden');
-            overlay.classList.remove('hidden');
-            form.reset();
+    
+            fr.style.display = 'none';
+            h1.style.display = 'none';
+            document.body.style.backgroundColor = 'white'
+
+             message.style.cssText = "display:block;textAlign :center;position :absolute;top :50%;left :25% ; fontSize:2rem";
+
         }else if(!radio) alert('Choose the Gender')
         else if(!values) alert('fill complete details')
         else if(!checkbox.checked)  alert('Please agree the terms')
 })
-
-//close modal by clicking on body or 'x'
-const closem = function() {
-    message.classList.add('hidden');
-    overlay.classList.add('hidden');
-};
-
-btnclosemodal.addEventListener('click', closem);
-overlay.addEventListener('click', closem);
 
