@@ -21,7 +21,6 @@ h1 {
 .mar {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 35px;
     border-radius: 5px;
     width: 70%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
@@ -166,8 +165,15 @@ h1 {
     .mar {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        background-color: white;
+        margin-bottom: 35px;
+        width: 95%;
+        background-color: lightyellow;
+    }
+    .f {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 0;
     }
     .f .f1 {
         display: flex;
@@ -177,13 +183,14 @@ h1 {
     .label {
         display: block;
         position: relative;
+        margin-left: 0;
         width: 100%;
     }
     .in {
         display: block;
         position: absolute;
-        width: 70%;
-        left: auto;
+        width: 75%;
+        left: 6.8%;
     }
     .f2 {
         margin: 0px;
@@ -204,5 +211,8 @@ h1 {
     }
     .submit {
         background-color: rgb(123, 123, 164);
+    }
+    .message {
+        font-size: 0.5rem
     }
 }
